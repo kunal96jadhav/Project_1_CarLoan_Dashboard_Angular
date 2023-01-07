@@ -28,9 +28,14 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
+              
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+               "node_modules/bootstrap-grid-only-css/dist/css/bootstrap-grid.css"
+           
+              
             ],
             "scripts": []
           },
@@ -93,7 +98,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "node_modules/bootstrap-grid-only-css/dist/css/bootstrap-grid.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": []
           }
