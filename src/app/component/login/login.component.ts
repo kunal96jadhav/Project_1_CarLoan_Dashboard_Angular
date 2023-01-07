@@ -11,10 +11,12 @@ export class LoginComponent {
   constructor(private fb:FormBuilder){}
   ngOnInit(){
     this.loginForm=this.fb.group({
-
+      username:[],
+      password:[]
     })
   }
   onLoginSubmit(){
-    alert("hello")
+   console.log(this.loginForm.value);
+   
   }
 }

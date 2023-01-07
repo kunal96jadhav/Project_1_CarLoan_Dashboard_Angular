@@ -26,6 +26,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,8 @@ import {MatMenuModule} from '@angular/material/menu';
     NavigationComponent,
     DashboardComponent,
      LoginComponent,
-     RegistrationComponent,
+     RegistrationComponent
+    
      
   ],
   imports: [
