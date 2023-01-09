@@ -1,21 +1,28 @@
 <div class="navbar">
     <div class="top">
-        <mat-icon>notifications_none</mat-icon>
+        <!-- <mat-icon>notifications_none</mat-icon> -->
     </div>
     <div class="user">
         <img src="../../../assets/logo.png" alt="user.png">
-        <h4 class="name">Kunal</h4>
-        <p class="mail">jkunal1996@gmail.com</p>
+        <h4 class="name">{{role}}</h4>
+         <!-- <h1>User Role: </h1>
+         <h2>{{role}}</h2> -->
+        <!-- <p class="mail">jkunal1996@gmail.com</p> -->
     </div>
     <div class="menu">
-        <div class="menu-head">
-            <span>Dashboard</span>
+        <!-- <div class="menu-head">
+            <span>MENUE</span>
+            
+        </div> -->
+        <div>
+            <mat-divider class="mat-divider"></mat-divider>
         </div>
-        <div class="menu-item">
+        
+        <div class="menu-item" *ngFor="let menu of meenus[0][userRole]">
             <!-- Static Menus Items -->
-            <button mat-button class="menu-button">
-                <mat-icon>dashboard</mat-icon>
-                <span>Home</span>
+            <button mat-button class="menu-button"[routerLink]="[userRole,menu.key]">
+                <mat-icon >arrow_forward_ios</mat-icon>
+                <span>{{menu.label}}</span>
             </button>
 
            <!-- <button mat-button class="menu-button">
